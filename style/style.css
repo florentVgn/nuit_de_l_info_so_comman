@@ -1,0 +1,143 @@
+/* Feuille de style pour le TP Contacts */
+
+body {
+   widh: 976px;
+   margin: auto;
+   font-family: Trebuchet MS, Verdana, sans-serif;
+}
+
+h1 { text-align: center; margin-top: 75px;}
+table {
+    border-collapse: collapse;
+    margin: 5px auto ;
+}
+
+th { color: white; background: #BBBBBB; border: thin solid black;}
+td { font-size: .92em; border: thin solid black; }
+th, td {
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+
+/* Pour les formulaires */
+.formulaire {text-align: center;}
+p.form {
+   width: 700px;
+   margin: 3px auto;
+   display: inline;
+}
+p.form input {
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c3c3c3;
+  background-color: #f2f2f2;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #a0a0a0;
+}
+p.form input:hover {
+  border-bottom: 2px solid #bebebe;
+  background-color: #ddd;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.05);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.05);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.05);
+  transition: all 200ms ease-in;
+  transform: scale(1.05);
+}
+p.form input:focus {
+  border-bottom: 2px solid #DF3131;
+}
+p.form input[type=image] { vertical-align: middle; }
+.icon {
+  margin-top: 10px !important;
+}
+
+/* Pour les messages */
+p.message {
+  font-weight: bold;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #4EBF76;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+p.erreur {
+  font-weight: bold;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #DF3131;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+/* Pour les auteurs */
+p.binome {
+  width: 98%;
+  margin-top: 0;
+  text-align: right;
+  font-size: 0.8em;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 2%;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #c3c3c3;
+}
+
+
+.back {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  vertical-align: middle;
+  background-color: #333;
+  color: #f2f2f2;
+  border-radius: 50px 50px 50px 50px;
+  position: fixed;
+  top: 90%;
+  left: 25px;
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  text-decoration: none;
+}
+.back:hover, .top:hover {
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.2);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.2);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.2);
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
+}
+.lien {
+  font-family: 'Verdana', sans-serif;
+  padding-left: 10px;
+  color: #323232;
+  width: 100%;
+  text-decoration: none;
+}
+.lien:hover {
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.2);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.2);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.2);
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
+}
+
+.lien a:visited {
+  color: #000;
+}
+.lien a:hover {
+  color: #45a8b2;
+}
