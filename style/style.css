@@ -146,10 +146,12 @@ p.binome {
   border: 0px;
   border-radius: 0px;
 }
+
 .footer{
   border: solid black 3px;
   height: 150px;
-  background-image: url("../img/trump.jpg");
-  background-repeat: repeat-x repeat-y;
+  background-color: #FF5145;
   bottom: 0;
+  position: absolute;
+  width: 100%;
 }
