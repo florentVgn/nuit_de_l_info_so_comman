@@ -33,7 +33,19 @@ include_once 'app/bootstrap.inc.php';
     <ul>
 
     </ul>
+  <h2>Consulter notifications</h2>
+  <!-- Recevoir notifications des réfugiés -->
 
+  <h2>Rediger une actualité</h2>
+  <form action=".php" method="post" enctype="multipart/form-data">
+    <p>Titre de la publication</p>
+    <input type="text" name="objet"/>
+      <br><br>
+    <textarea name="contenu" rows="5" cols="100"></textarea>
+      <br><br>
+    <input type="submit" value="valider" />
+    <input type="reset" value="vider le formulaire" />
+  </form>
 
 
 
