@@ -143,5 +143,9 @@ p.binome {
 }
 
 .footer{
-  background-color: red;
+  border: solid black 3px;
+  height: 150px;
+  background-image: url("../img/trump.jpg");
+  background-repeat: repeat-x repeat-y;
+  bottom: 0;
 }
