@@ -29,8 +29,8 @@ include_once 'app/bootstrap.inc.php';
   </head>
   <body>
     <h1><i class="fa fa-print" aria-hidden="true"></i>Ici un formulaire permettant d'envoyer un mail pour vouloir s'inscrire</h1>
-    
 
+    <p>Test</p>
 
 
 
