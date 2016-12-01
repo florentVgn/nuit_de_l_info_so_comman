@@ -4,6 +4,7 @@ body {
    widh: 976px;
    margin: auto;
    font-family: Trebuchet MS, Verdana, sans-serif;
+   background-color: #F7F8FA;
 }
 
 h1 { text-align: center; margin-top: 75px;}
@@ -148,7 +149,7 @@ p.binome {
 }
 
 .footer{
-  border: solid black 3px;
+  border-top: solid black 2px;
   height: 150px;
   background-color: #FF5145;
   bottom: 0;

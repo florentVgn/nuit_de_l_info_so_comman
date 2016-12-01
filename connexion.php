@@ -50,7 +50,7 @@ if (isset($_POST['voir'])) {
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="style/style.css">
         <title>Modèle de page pour le TP Contacts</title>
     </head>
     <body>
