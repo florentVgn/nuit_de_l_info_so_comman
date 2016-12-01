@@ -18,5 +18,6 @@ include_once 'app/bootstrap.inc.php';
 
 
         		<a class="back" href="index.php">Back</a>
+            <?php include("include/footer.php");?>
     </body>
 </html>

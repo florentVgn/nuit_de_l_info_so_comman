@@ -148,11 +148,22 @@ p.binome {
   border-radius: 0px;
 }
 
-.footer{
-  border-top: solid black 2px;
-  height: 150px;
-  background-color: #FF5145;
+.footer
+{
+  border-top: solid #8F9090 2px;
+  height: 90px;
+  background-color: #CCCCCC;
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+
+.footer-copyright
+{
+  text-align: center;
+}
+
+.footer-nuitinfo
+{
+  height: 80px;
 }
