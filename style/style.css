@@ -516,3 +516,11 @@ navbar {
   font-color: white !important; 
 }
 }
+.creerAnnonce
+{
+  text-align : center;
+}
+#idAcc
+{
+  text-align : right;
+}
