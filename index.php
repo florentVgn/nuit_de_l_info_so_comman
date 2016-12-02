@@ -84,24 +84,24 @@ include_once 'app/bootstrap.inc.php';
         <div class="modal-content">
         <div class="row">
           <div class="col-lg-4 col-xs-4 col-md-4">
-          <img src="img/france.jpg" class="photoFrance">
+            <a href="indexfr.php"><img src="img/france.jpg" class="photoFrance"></a>
           </div>
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <img src="img/anglais.jpg" class="photoAnglais">
+            <a href="indexen.php"><img src="img/anglais.jpg" class="photoAnglais"></a>
           </div>
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <img src="img/arabe.jpg" class="photoArabe">
+            <a href="indexar.php"><img src="img/arabe.jpg" class="photoArabe"></a>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <p class="texteLangue">Français</p>
+            <a href="indexfr.php"><p class="texteLangue">Français</p></a>
           </div>
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <p class="texteLangue">English</p>
+            <a href="indexen.php"><p class="texteLangue">English</p></a>
           </div>
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <p class="texteLangue">اللغة العربية</p>
+            <a href="indexar.php"><p class="texteLangue">اللغة العربية</p></a>
           </div>
         </div>
         </div>
