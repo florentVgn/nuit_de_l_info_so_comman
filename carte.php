@@ -22,44 +22,54 @@ include_once 'app/bootstrap.inc.php';
 
     <!--CSS -->
     <link rel="stylesheet" href="style/style.css">
-    <link href="style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="js/jquery.vmap.js" type="text/javascript"></script>
-    <script src="js/jquery.vmap.france.js" type="text/javascript"></script>
-  	<script src="js/jquery.vmap.colorsFrance.js" type="text/javascript"></script>
+    <script src="jquery.vmap.js" type="text/javascript"></script>
+    <script src="jquery.vmap.france.js" type="text/javascript"></script>
+	<script src="jquery.vmap.colorsFrance.js" type="text/javascript"></script>
 
-  	<script type="text/javascript">
-  	$(document).ready(function() {
-  		$('#francemap').vectorMap({
-  		    map: 'france_fr',
-  			hoverOpacity: 0.5,
-  			hoverColor: false,
-  			backgroundColor: "#F7F8FA",
-  			colors: couleurs,
-  			borderColor: "#000000",
-  			selectedColor: "#EC0000",
-  			enableZoom: true,
-  			showTooltip: true,
-  		    onRegionClick: function(element, code, region)
-  		    {
-  		        var message = 'Département : "'
-  		            + region
-  		            + '" || Code : "'
-  		            + code
-  					+ '"';
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#francemap').vectorMap({
+		    map: 'france_fr',
+			hoverOpacity: 0.5,
+			hoverColor: false,
+			backgroundColor: "#f7f8fa",
+			colors: couleurs,
+			borderColor: "#000000",
+			selectedColor: "#EC0000",
+			enableZoom: true,
+			showTooltip: true,
+		    onRegionClick: function(element, code, region)
+		    {
+		        var message = 'Département : "'
+		            + region
+		            + '" || Code : "'
+		            + code
+					+ '"';
 
-  		        alert(message);
-  		    }
-  		});
-  	});
-  	</script>
+		        alert(message);
+		    }
+		});
+	});
+	</script>
   </head>
   <body>
+
     <?php include 'include/menuReg.php'; ?>
     <h1>Selectionnez un département</h1>
     <div id="francemap" class="col-lg-6 col-lg-offset-3" style="height: 700px;"></div>
 
-    <?php include("include/footer.php");?>
+    <footer class="footer col-lg-12">
+      <div class="col-lg-1"><img class="footer-chicken_run " src="img/chicken_run.jpg"> </div>
+      <div class="col-lg-1"><img class="footer-tacos_n_co " src="img/tacos_n_co.jpg"> </div>
+      <div class="col-lg-1"><img class="footer-millenium " src="img/millenium.PNG"> </div>
+      <p class="footer-copyright col-lg-9">Copyright © 2016 - SoComman</p>
+    </footer>
+
+
+
   </body>
 </html>
