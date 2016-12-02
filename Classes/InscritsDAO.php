@@ -1,7 +1,7 @@
 <?php
 
 class InscritsDAO extends DAO {
-    protected $class = "inscrit";
+    protected $class = "Inscrit";
 
     public function checkAuthentification($login, $mdp)
     {
@@ -26,8 +26,7 @@ class InscritsDAO extends DAO {
         $stmt = $this->pdo->query("SELECT * FROM inscrit ORDER BY nom");
         foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row)
             {
-             $res[] = new Inscrit(array('login' => $row['login'],'nom' => $row['nom'],'prenom' => $row['prenom'],
-              'mdp' => $row['mdp'],'mail' => $row['mail'],'role' => $row['role'],
+             $res[] = new Inscrit(array('login' => $row['login'],'nom' => $row['nom'], 'mdp' => $row['mdp'],'mail' => $row['mail'],'role' => $row['role'],
               'acces_region' => $row['acces_region']));
             }
 
@@ -44,9 +43,8 @@ class InscritsDAO extends DAO {
 
     public function insert($obj)
     {
-      $stmt = $this->pdo->prepare("INSERT INTO inscrit (nom, prenom, login, mdp, mail, role, acces_region) VALUES (:nom, :prenom, :login, :mdp, :mail, :role, :acces_region)");
+      $stmt = $this->pdo->prepare("INSERT INTO inscrit (nom, login, mdp, mail, role, acces_region) VALUES (:nom, :login, :mdp, :mail, :role, :acces_region)");
       $res = $stmt->execute(array('nom' => $obj->nom,
-                                  'prenom' => $obj->prenom,
                                   'login' => $obj->login,
                                   'mdp' => $obj->mdp,
                                   'mail' => $obj->mail,

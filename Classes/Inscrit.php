@@ -1,6 +1,6 @@
 <?php
 class Inscrit extends TableObject {
-    static public $tableName = "inscrits";
+    static public $tableName = "inscrit";
     static public $keyFieldsNames = array('login');
     public $hasAutoIncrementedKey = false;
 
