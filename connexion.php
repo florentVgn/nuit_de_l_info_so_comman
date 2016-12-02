@@ -14,27 +14,21 @@ if (isset($_POST['voir'])) {
       echo "<p class=\"erreur\">Vous n'êtes pas dans la base de données</p>";
     }
     else {
-      switch ($check['rôle']) {
-        case 'utilisateur':
+      switch ($check['role']) {
+        case 'ROLE_ADMINISTRATEUR':
           $_SESSION['id'] = $check['login'];
-          $_SESSION['role'] = $check['rôle'];
-          header('Location:listeInscrits.php');
+          $_SESSION['role'] = $check['role'];
+          header('Location:admin.php');
           break;
-        case 'redacteur':
+        case 'ROLE_ORGANISATEUR':
           $_SESSION['id'] = $check['login'];
-          $_SESSION['role'] = $check['rôle'];
-          header('Location:envoi.php');
-          break;
-        case 'administrateur':
-          $_SESSION['id'] = $check['login'];
-          $_SESSION['role'] = $check['rôle'];
-          header('Location:gestionInscrits.php');
+          $_SESSION['role'] = $check['role'];
+          header('Location:homeOrga.php');
           break;
         default:
-          echo "<p class=\"erreur\">Vous n'avez pas de rôle</p>";
+          echo "<p class=\"erreur\">Vous n'avez pas de role</p>";
           break;
       }
-      //header('Location:listeInscrits.php');
     }
   }
   //Sinon c'est que les champs sont vides
@@ -54,7 +48,6 @@ if (isset($_POST['voir'])) {
         <title>Modèle de page pour le TP Contacts</title>
     </head>
     <body>
-      <p class="binome">Réalisée par : Maxime Ambry et Martin Amilhaud - Groupe 1H</p>
       <h1>Connexion</h1>
 
         <div class="formulaire">
@@ -64,8 +57,6 @@ if (isset($_POST['voir'])) {
             <p class="form"><input type="image" name="voir[]" src="img/voir.png" value="submit"></p>
           </form>
         </div>
-		 <a href="homeOrga.php">Connecté</a>
-     <a href="admin.php">Si administrateur</a>
      <a href="formulaire.php">Inscription</a>
      <?php include("include/footer.php");?>
     </body>
