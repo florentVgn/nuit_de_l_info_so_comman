@@ -167,11 +167,5 @@ p.binome {
 
 .footer-copyright
 {
-
-}
-
-.footer-chicken_run, .footer-tacos_n_co, .footer-millenium
-{
-  border-radius: 70%;
-  height: 80px;
+  text-align: center;
 }

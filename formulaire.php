@@ -101,7 +101,6 @@ if(isset($_POST['envoyerDemandeInscription']))
 
 
     <?php include("include/footer.php");?>
->>>>>>> origin/master
 
   </body>
 </html>
