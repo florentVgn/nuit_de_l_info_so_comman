@@ -32,9 +32,9 @@ include_once 'app/bootstrap.inc.php';
 
 	<script type="text/javascript">
 	$(document).ready(function() {
-    function RedirectionJavascript(code)
+    function RedirectionJavascript(departement)
     {
-      document.location.href="ressource.php?code="+code;
+      document.location.href=departement+".php";
     }
 		$('#francemap').vectorMap({
 		    map: 'france_fr',
@@ -47,14 +47,14 @@ include_once 'app/bootstrap.inc.php';
 			enableZoom: true,
 			showTooltip: true,
 
-		    onRegionClick: function(element, code, region)
+		    onRegionClick: function(element, code, departement)
 		    {
 		        var message = 'Département : "'
-		            + region
+		            + departement
 		            + '" || Code : "'
 		            + code
 					+ '"';
-          RedirectionJavascript(code)
+          RedirectionJavascript(departement)
 		    }
 		});
 	});
