@@ -24,15 +24,12 @@ include_once 'app/bootstrap.inc.php';
     <link rel="stylesheet" href="style/style.css">
     <link href="style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
-    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.vmap.js" type="text/javascript"></script>
+    <script src="js/jquery.vmap.france.js" type="text/javascript"></script>
+	  <script src="js/jquery.vmap.colorsFrance.js" type="text/javascript"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="jquery.vmap.js" type="text/javascript"></script>
-    <script src="jquery.vmap.france.js" type="text/javascript"></script>
-	<script src="jquery.vmap.colorsFrance.js" type="text/javascript"></script>
-
-	<script type="text/javascript">
-	$(document).ready(function() {
+	  <script type="text/javascript">
+	  $(document).ready(function() {
 		$('#francemap').vectorMap({
 		    map: 'france_fr',
 			hoverOpacity: 0.5,
@@ -43,22 +40,22 @@ include_once 'app/bootstrap.inc.php';
 			selectedColor: "#EC0000",
 			enableZoom: true,
 			showTooltip: true,
-		    onRegionClick: function(element, code, region)
-		    {
-		        var message = 'Département : "'
-		            + region
-		            + '" || Code : "'
-		            + code
-					+ '"';
+  		    onRegionClick: function(element, code, region)
+  		    {
+  		        var message = 'Département : "'
+  		            + region
+  		            + '" || Code : "'
+  		            + code
+  					+ '"';
 
-		        alert(message);
-		    }
-		});
-	});
-	</script>
+  		        alert(message);
+  		    }
+  		});
+  	});
+  	</script>
   </head>
   <body>
-  
+
     <nav class="navbar navbar-default menu" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
