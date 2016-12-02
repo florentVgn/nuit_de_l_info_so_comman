@@ -67,5 +67,6 @@ if (isset($_POST['voir'])) {
 		 <a href="homeOrga.php">Connecté</a>
      <a href="admin.php">Si administrateur</a>
      <a href="formulaire.php">Inscription</a>
+     <?php include("include/footer.php");?>
     </body>
 </html>

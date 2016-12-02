@@ -147,6 +147,7 @@ p.binome {
   border: 0px;
   border-radius: 0px;
 }
+<<<<<<< HEAD
 .lien-actif {
   background-color: #F7F8FA !important;
 }
@@ -157,7 +158,25 @@ p.binome {
   border-top: solid black 2px;
   height: 150px;
   background-color: #FF5145;
+=======
+
+.footer
+{
+  border-top: solid #8F9090 2px;
+  height: 90px;
+  background-color: #CCCCCC;
+>>>>>>> origin/master
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+
+.footer-copyright
+{
+  text-align: center;
+}
+
+.footer-nuitinfo
+{
+  height: 80px;
 }

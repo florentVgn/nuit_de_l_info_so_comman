@@ -38,5 +38,6 @@ if (isset($_POST['supp'])) {
           <p class="form"><input type="image" name="supp[]" src="img/supp.png" value="submit"></p>
         </form>
       </div>
+      <?php include("include/footer.php");?>
     </body>
 </html>
