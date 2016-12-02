@@ -82,9 +82,10 @@ if (isset($_POST['voir'])) {
             <p class="form"><input type="password" name="mdp" placeholder="Mot de passe"></p><br>
             <p class="form"><input type="image" name="voir[]" src="img/voir.png" value="submit"></p>
           </form>
+          <a href="formulaire.php">Inscription</a>
         </div>
       </div>
-     <a href="formulaire.php">Inscription</a>
+
      <?php include("include/footer.php");?>
     </body>
 </html>
