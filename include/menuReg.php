@@ -19,9 +19,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li class="lien-menu lien-actif"><a href="#">Actualité</a></li>
-        <li class="lien-menu "><a href="#">Ressources</a></li>
-        <li class="lien-menu "><a href="#">Réseaux sociaux</a></li>
+        <li class="lien-menu lien-actif"><a href="actu.php">Actualité</a></li>
+        <li class="lien-menu "><a href="ressources.php">Ressources</a></li>
+        <li class="lien-menu "><a href="reseauxsociaux.php">Réseaux sociaux</a></li>
+        <li class="lien-menu "><a href="carte.php">Carte</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
