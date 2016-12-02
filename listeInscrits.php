@@ -24,7 +24,7 @@ if (isset($_POST['supp'])) {
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="style/style.css">
         <title>Liste inscription</title>
     </head>
     <body>

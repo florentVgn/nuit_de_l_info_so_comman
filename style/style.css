@@ -4,6 +4,7 @@ body {
    widh: 976px;
    margin: auto;
    font-family: Trebuchet MS, Verdana, sans-serif;
+   background-color: #F7F8FA;
 }
 
 h1 { text-align: center; margin-top: 75px;}
@@ -140,4 +141,18 @@ p.binome {
 }
 .lien a:hover {
   color: #45a8b2;
+}
+.menu {
+  background-color: #ff5145 !important;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.footer{
+  border-top: solid black 2px;
+  height: 150px;
+  background-color: #FF5145;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }

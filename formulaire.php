@@ -43,6 +43,7 @@ if(isset($_POST['envoyerDemandeInscription']))
 
     <!--FontAwesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,6 +53,7 @@ if(isset($_POST['envoyerDemandeInscription']))
     <![endif]-->
   </head>
   <body>
+<<<<<<< HEAD
     <div>
       <table>
         <form action="" method="post" enctype="application/x-www-form-urlencoded" name="formulaireInscription">
@@ -91,6 +93,15 @@ if(isset($_POST['envoyerDemandeInscription']))
         </form>
       </table>
       </div>
+=======
+    <h1><i class="fa fa-print" aria-hidden="true"></i>Ici un formulaire permettant d'envoyer un mail pour vouloir s'inscrire</h1>
+
+    <p>Test</p>
+
+
+
+    <?php include("include/footer.php");?>
+>>>>>>> origin/master
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
