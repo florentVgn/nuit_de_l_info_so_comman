@@ -12,7 +12,7 @@ if (isset($_POST['confirm_supp'])) {
       $userToSupp = $InscritsDAO->getOne($_SESSION['loginToSupp']);
       $InscritsDAO->delete($userToSupp);
     }
-    header("Location: ../web/admin.php");
+    header("Location: admin.php");
     exit(0);
 }
 ?>
@@ -25,7 +25,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        
+
     <title>Confirmation</title>
 </head>
     <body>

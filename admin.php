@@ -6,7 +6,7 @@ include_once 'app/bootstrap.inc.php';
 if(isset($_POST['modif']))
 {
     $InscritsDAO->updateUser($_POST['nom'], $_POST['login'], $_POST['mdp'],$_POST['mail'],$_POST['acces_region']);
-    header("Location: ../web/admin.php?modif=OK");
+    header("Location: admin.php?modif=OK");
     exit(0);
 }
 $message = isset($_GET["modif"])?"Modification effectuee\n":"";
@@ -43,8 +43,8 @@ if(isset($_POST['supp']))
     <![endif]-->
   </head>
   <body>
-    <?php include 'include/menuAdmin.php';
     <h1><i class="fa fa-print" aria-hidden="true"></i>Gestion admin</h1>
+    <?php include 'include/menuAdmin.php';
     echo $message;
     function afficheTout($Inscrits) {
         echo "------- Tous les Inscrits :\n";
