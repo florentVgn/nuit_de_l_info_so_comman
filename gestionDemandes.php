@@ -50,7 +50,11 @@ $message = isset($_GET["accepter"])?"Acceptation effectuee\n":$message;
     <![endif]-->
   </head>
   <body>
+<<<<<<< HEAD
     <?php include 'include/menuRegCarte.php'; ?>
+=======
+    <?php include 'include/menuOrgaGestion.php'; ?>
+>>>>>>> origin/master
     <?php echo $message ?>
     <?php
 
