@@ -61,9 +61,5 @@ include_once 'app/bootstrap.inc.php';
     <div id="francemap" class="col-lg-6 col-lg-offset-3" style="height: 700px;"></div>
 
     <?php include("include/footer.php");?>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
   </body>
 </html>
