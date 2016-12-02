@@ -53,9 +53,9 @@ if(isset($_POST['envoyerDemandeInscription']))
     <![endif]-->
   </head>
   <body>
-    <?php include 'include/menuOrga.php'; ?>
+    <?php include 'include/menuIndex.php'; ?>
     <div>
-      
+
       <table>
         <form action="" method="post" enctype="application/x-www-form-urlencoded" name="formulaireInscription">
           <tr>

@@ -11,9 +11,9 @@ $param['erreur'] = false;
 $param['message'] = "";
 
 
-if(isset($_POST['forgot']))
+if(isset($_POST['inscription']))
 {
-  header("Location: motdepasseoublie.php");
+  header("Location: formulaire.php");
   exit(0);
 }
 
