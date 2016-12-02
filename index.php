@@ -92,14 +92,25 @@ include_once 'app/bootstrap.inc.php';
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-4 col-md-4">
           <img src="img/france.jpg" class="photoFrance">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-4 col-md-4">
             <img src="img/anglais.jpg" class="photoAnglais">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-4 col-md-4">
             <img src="img/arabe.jpg" class="photoArabe">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-xs-4 col-md-4">
+            <p class="texteLangue">Français</p>
+          </div>
+          <div class="col-lg-4 col-xs-4 col-md-4">
+            <p class="texteLangue">English</p>
+          </div>
+          <div class="col-lg-4 col-xs-4 col-md-4">
+            <p class="texteLangue">اللغة العربية</p>
           </div>
         </div>
         </div>
