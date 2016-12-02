@@ -23,7 +23,9 @@
         <li class="lien-menu "><a href="creationcompte.php">Gestion Inscriptions</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="lien-actif">Déconnexion</a></li>
+        <form action="" method="post">
+          <input type="submit" name="deconnexion" value="Deconnexion"/>
+        </form>
 
       </ul>
     </div><!-- /.navbar-collapse -->

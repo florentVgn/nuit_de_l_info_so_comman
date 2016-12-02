@@ -5,37 +5,50 @@ include_once 'app/bootstrap.inc.php';
 
 
 //Si il y a eu un clique sur le bouton de connexion
-if (isset($_POST['voir'])) {
-  //Si les champs ne sont pas vide
-  if (!empty($_POST['login']) && !empty($_POST['mdp'])) {
-    //On appel la fonction de vérification avec les paramètres renseigné
-    $check = $InscritsDAO->checkAuthentification($_POST['login'],$_POST['mdp']);
-    if ($check == null) {
-      echo "<p class=\"erreur\">Vous n'êtes pas dans la base de données</p>";
-    }
-    else {
-      switch ($check['role']) {
-        case 'ROLE_ADMINISTRATEUR':
-          $_SESSION['id'] = $check['login'];
-          $_SESSION['role'] = $check['role'];
-          header('Location:admin.php');
-          break;
-        case 'ROLE_ORGANISATEUR':
-          $_SESSION['id'] = $check['login'];
-          $_SESSION['role'] = $check['role'];
-          header('Location:homeOrga.php');
-          break;
-        default:
-          echo "<p class=\"erreur\">Vous n'avez pas de role</p>";
-          break;
-      }
-    }
-  }
-  //Sinon c'est que les champs sont vides
-  else {
-    echo "<p class=\"erreur\">Formulaire invalide</p>";
-  }
+$param['login'] = isset($_POST['login'])?trim($_POST['login']):"";
+$param['mdp'] = isset($_POST['mdp'])?trim($_POST['mdp']):"";
+$param['erreur'] = false;
+$param['message'] = "";
 
+
+if(isset($_POST['forgot']))
+{
+  header("Location: motdepasseoublie.php");
+  exit(0);
+}
+
+if (isset($_POST['connexion']))
+{ // On a cliqué sur le bouton
+  if (empty($param['login']) || empty($param['mdp']))
+  {
+     $param['erreur'] = true;
+     $param['message'] = "Merci de saisir un nom et un mot de passe...";
+  }
+  else
+  {
+     // Recherche de l'identification dans la base
+     $user = $InscritsDAO->checkAuthentification($param['login'], $param['mdp']);
+     if (!$user)
+     {
+        $param['erreur'] = true;
+        $param['message'] = "Erreur d'authentification (".$param['login'].").";
+     }
+     else
+     {
+        $_SESSION['login'] = $user['login'];
+
+        if($user['role'] == 'ROLE_ADMINISTRATEUR')
+        {
+          header("Location: admin.php");
+        }
+
+        if($user['role'] == 'ROLE_ORGANISATEUR')
+        {
+
+            header("Location: homeOrga.php");
+        }
+     }
+  }
 }
 
 
@@ -47,7 +60,7 @@ if (isset($_POST['voir'])) {
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <title>Bootstrap 101 Template</title>
+      <title>connexion</title>
 
       <!-- Bootstrap -->
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -59,7 +72,9 @@ if (isset($_POST['voir'])) {
       <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
-      <?php include 'include/menuIndex.php'; ?>
+      <?php include 'include/menuIndex.php';
+      echo $param['message']?>
+
       <div class="container bandeau-connexion">
         <div id="Clouds">
           <div class="Cloud Foreground"></div>
@@ -80,9 +95,11 @@ if (isset($_POST['voir'])) {
           <form action="" method="post">
             <p class="form"><input type="text" name="login" placeholder="Login" ></p><br>
             <p class="form"><input type="password" name="mdp" placeholder="Mot de passe"></p><br>
+            <input type="submit" name="connexion" value="Connexion"/>
+            <input type="submit" name="inscription" value="Inscription"/>
           </form>
-          <a href="formulaire.php"><button type="button" name="button">Connexion</button></a>
-          <a href="formulaire.php"><button type="button" name="button">Inscription</button></a>
+
+
         </div>
       </div>
 
