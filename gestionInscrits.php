@@ -27,7 +27,7 @@ if (isset($_POST['supp'])) {
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="style/style.css">
-        <title>Liste inscription</title>
+        <title>Liste inscrits</title>
     </head>
     <body>
       <p class="binome">Réalisée par : Maxime Ambry et Martin Amilhaud - Groupe 1H</p>

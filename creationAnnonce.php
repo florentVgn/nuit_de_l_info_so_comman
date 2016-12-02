@@ -13,6 +13,7 @@ if(isset($_POST["Objet"]))
 <html id="html">
   <head>
     <meta charset="utf-8"/>
+    <title>Creation d'une annonce</title>
     <link rel="stylesheet" type="text/css" href="/style/style.css">
   </head>
   <body>
