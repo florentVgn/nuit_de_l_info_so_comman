@@ -101,9 +101,9 @@ if (isset($_POST['connexion']))
           <form action="" method="post">
             <p class="form"><input type="text" name="login" placeholder="Login" ></p><br>
             <p class="form"><input type="password" name="mdp" placeholder="Mot de passe"></p><br>
-            <input type="submit" name="connexion" value="Connexion"/>
-            <input type="submit" name="forgot" value="Mot de passe oublié"/>
-            <input type="submit" name="inscription" value="Inscription"/>            
+            <input class="btn btn-danger btn-lg" type="submit" name="connexion" value="Connexion"/>
+            <input class="btn btn-danger btn-lg" type="submit" name="forgot" value="Mot de passe oublié"/>
+            <input class="btn btn-danger btn-lg" type="submit" name="inscription" value="Inscription"/>
           </form>
 
 
