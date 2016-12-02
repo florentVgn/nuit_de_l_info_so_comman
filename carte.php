@@ -22,15 +22,43 @@ include_once 'app/bootstrap.inc.php';
 
     <!--CSS -->
     <link rel="stylesheet" href="style/style.css">
+    <link href="style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.vmap.js" type="text/javascript"></script>
+    <script src="jquery.vmap.france.js" type="text/javascript"></script>
+	<script src="jquery.vmap.colorsFrance.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#francemap').vectorMap({
+		    map: 'france_fr',
+			hoverOpacity: 0.5,
+			hoverColor: false,
+			backgroundColor: "#ffffff",
+			colors: couleurs,
+			borderColor: "#000000",
+			selectedColor: "#EC0000",
+			enableZoom: true,
+			showTooltip: true,
+		    onRegionClick: function(element, code, region)
+		    {
+		        var message = 'Département : "'
+		            + region
+		            + '" || Code : "'
+		            + code
+					+ '"';
+
+		        alert(message);
+		    }
+		});
+	});
+	</script>
   </head>
   <body>
+  
     <nav class="navbar navbar-default menu" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -52,20 +80,19 @@ include_once 'app/bootstrap.inc.php';
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Actualité</a></li>
-            <li class="active"><a href="#">Ressources</a></li>
+            <li class="lien-menu lien-actif"><a href="#">Actualité</a></li>
+            <li class="lien-menu "><a href="#">Ressources</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Droite</a></li>
+            <li><a href="#" class="lien-actif">Déconnexion</a></li>
 
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <h1><i class="fa fa-print" aria-hidden="true"></i>Selectionnez un département</h1>
+    <h1><i class="fa fa-angle-down fa-stack-2x faa-float animated" aria-hidden="true"></i>Selectionnez un département</h1>
     <a href="homeRefugie.php">Si on clique sur un lieu</a>
-
-
+    <div id="francemap" style="width: 700px; height: 600px;"></div>
 
 
     <?php include("include/footer.php");?>

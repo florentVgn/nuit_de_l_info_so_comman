@@ -147,7 +147,12 @@ p.binome {
   border: 0px;
   border-radius: 0px;
 }
-
+.lien-actif {
+  background-color: #F7F8FA !important;
+}
+.lien-menu {
+  color: white !important;
+}
 .footer{
   border-top: solid black 2px;
   height: 150px;
