@@ -90,39 +90,20 @@ if(isset($_POST['envoyerInscription']))
   <body>
     <?php include 'include/menuAdminCreationCompte.php'; ?>
 
-    <div>
-      <table>
-        <form action="" method="post" enctype="application/x-www-form-urlencoded" name="formulaireInscription">
-          <tr>
-            <td colspan="2"><input id="nameInscri" type="text" name="nomInscri" placeholder="Nom de l'entreprise" maxlength="25" value="<?php echo @$_POST['nomInscri']; ?>" required/></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input id="mailInscri" type="email" name="mailInscri"  placeholder="Mail de l'entreprise" maxlength="100" value="<?php echo @$_POST['mailInscri']; ?>" required/></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input id="idInscri" type="text" name="loginInscri"  placeholder="Identifiant" maxlength="15" value="<?php echo @$_POST['loginInscri']; ?>" required/></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input id="mdpInscri" type="password" name="mdpInscri" maxlength="15" placeholder="Mot de passe" value="<?php echo @$_POST['mdpInscri']; ?>" required/></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input id="confirmInscri" type="password" name="confirmInscri" maxlength="15" placeholder="Confirmation" value="<?php echo @$_POST['confirmInscri']; ?>" required/></td>
-          </tr>
+      <div class="theForm">
+        <form  class="formulaire-fields" action="" method="post" enctype="application/x-www-form-urlencoded" name="formulaireInscription">
+      <input  class="formulaire-fields" id="nameInscri" type="text" name="nomInscri" placeholder="Nom de l'entreprise" maxlength="25" value="<?php echo @$_POST['nomInscri']; ?>" required/>
+      <input  class="formulaire-fields" id="mailInscri" type="email" name="mailInscri"  placeholder="Mail de l'entreprise" maxlength="100" value="<?php echo @$_POST['mailInscri']; ?>" required/>
+  <input  class="formulaire-fields" id="idInscri" type="text" name="loginInscri"  placeholder="Identifiant" maxlength="15" value="<?php echo @$_POST['loginInscri']; ?>" required/>
+  <input  class="formulaire-fields" id="mdpInscri" type="password" name="mdpInscri" maxlength="15" placeholder="Mot de passe" value="<?php echo @$_POST['mdpInscri']; ?>" required/>
+<input  class="formulaire-fields" id="confirmInscri" type="password" name="confirmInscri" maxlength="15" placeholder="Confirmation" value="<?php echo @$_POST['confirmInscri']; ?>" required/>
 
-          <tr>
-            <td width="42%">
-              <center>
-                <input type="reset" name="reset" id="reset" value="Réinitialiser le formulaire"/>
-              </center>
-            </td>
-            <td width="41%">
-              <center>
-                <input type="submit" name="envoyerInscription" value="Envoyer">
-            </center>
-            </td>
-          </tr>
+                <input class="formulaire-fields"  type="reset" name="reset" id="reset" value="Réinitialiser le formulaire"/>
+
+                <input class="formulaire-fields"  type="submit" name="envoyerInscription" value="Envoyer">
+
         </form>
-      </table>
+
       </div>
 
 <?php include("include/footer.php");?>
