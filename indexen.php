@@ -54,7 +54,7 @@ include_once 'app/bootstrap.inc.php';
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Langue</a>
+                    <a class="page-scroll" href="index.php">Language</a>
                 </li>
             </ul>
         </div>
@@ -67,9 +67,9 @@ include_once 'app/bootstrap.inc.php';
          <div class="header-content-inner">
              <h1 id="homeHeading">WELCOME TO REFUGEES ASSISTANCE</h1>
              <hr>
-             <p>Afin de pouvoir profiter pleinement de notre site, choisissez la catégorie correspondant à votre situation</p>
-             <a href="carte.php" class="btn btn-primary btn-xl page-scroll">Explorer</a>
-             <a href="connexion.php" class="btn btn-primary btn-xl page-scroll">Organisations</a>
+             <p>In order to take full advantage of our site, choose the category corresponding to your situation</p>
+             <a href="carte.php" class="btn btn-primary btn-xl page-scroll">To explore</a>
+             <a href="connexion.php" class="btn btn-primary btn-xl page-scroll">Organizations</a>
          </div>
      </div>
  </header>

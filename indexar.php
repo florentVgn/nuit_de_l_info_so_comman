@@ -12,7 +12,7 @@ include_once 'app/bootstrap.inc.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Refugees Assistance</title>
+    <title>مساعدة اللاجئين</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,12 +37,6 @@ include_once 'app/bootstrap.inc.php';
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript">
-      $(window).load(function() {
-        $('#exampleModal').modal('show');
-
-      });
-    </script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
@@ -53,14 +47,14 @@ include_once 'app/bootstrap.inc.php';
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Refugees Assitance</a>
+            <a class="navbar-brand page-scroll" href="#page-top">مساعدة اللاجئين</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Langue</a>
+                    <a class="page-scroll" href="index.php" style="font-size:1.5em;">اللغة</a>
                 </li>
             </ul>
         </div>
@@ -71,45 +65,14 @@ include_once 'app/bootstrap.inc.php';
     <header>
      <div class="header-content">
          <div class="header-content-inner">
-             <h1 id="homeHeading">BIENVENUE SUR REFUGEES ASSISTANCE</h1>
+             <h1 id="homeHeading">مرحبا بكم في موقع مساعدة اللاجئين</h1>
              <hr>
-             <p>Afin de pouvoir profiter pleinement de notre site, choisissez la catégorie correspondant à votre situation</p>
+             <p style="font-size:1.5em;">من أجل الاستفادة الكاملة من موقعنا، واختر الفئة االتي تناسب موقفك</p>
              <a href="carte.php" class="btn btn-primary btn-xl page-scroll">Explorer</a>
              <a href="connexion.php" class="btn btn-primary btn-xl page-scroll">Organisations</a>
          </div>
      </div>
  </header>
-    <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-        <div class="row">
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexfr.php"><img src="img/france.jpg" class="photoFrance"></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexen.php"><img src="img/anglais.jpg" class="photoAnglais"></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexar.php"><img src="img/arabe.jpg" class="photoArabe"></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexfr.php"><p class="texteLangue">Français</p></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexen.php"><p class="texteLangue">English</p></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexar.php"><p class="texteLangue">اللغة العربية</p></a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-
-
-
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

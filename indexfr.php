@@ -54,7 +54,7 @@ include_once 'app/bootstrap.inc.php';
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Langue</a>
+                    <a class="page-scroll" href="index.php">Langue</a>
                 </li>
             </ul>
         </div>
