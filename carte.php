@@ -24,22 +24,25 @@ include_once 'app/bootstrap.inc.php';
     <link rel="stylesheet" href="style/style.css">
     <link href="style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
-    <script src="js/jquery.vmap.js" type="text/javascript"></script>
-    <script src="js/jquery.vmap.france.js" type="text/javascript"></script>
-	  <script src="js/jquery.vmap.colorsFrance.js" type="text/javascript"></script>
+    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
-	  <script type="text/javascript">
-	  $(document).ready(function() {
-		$('#francemap').vectorMap({
-		    map: 'france_fr',
-			hoverOpacity: 0.5,
-			hoverColor: false,
-			backgroundColor: "#ffffff",
-			colors: couleurs,
-			borderColor: "#000000",
-			selectedColor: "#EC0000",
-			enableZoom: true,
-			showTooltip: true,
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.vmap.js" type="text/javascript"></script>
+    <script src="jquery.vmap.france.js" type="text/javascript"></script>
+  	<script src="jquery.vmap.colorsFrance.js" type="text/javascript"></script>
+
+  	<script type="text/javascript">
+  	$(document).ready(function() {
+  		$('#francemap').vectorMap({
+  		    map: 'france_fr',
+  			hoverOpacity: 0.5,
+  			hoverColor: false,
+  			backgroundColor: "#F7F8FA",
+  			colors: couleurs,
+  			borderColor: "#000000",
+  			selectedColor: "#EC0000",
+  			enableZoom: true,
+  			showTooltip: true,
   		    onRegionClick: function(element, code, region)
   		    {
   		        var message = 'Département : "'
@@ -55,46 +58,11 @@ include_once 'app/bootstrap.inc.php';
   	</script>
   </head>
   <body>
-
-    <nav class="navbar navbar-default menu" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="home.php">
-            <img alt="WIIO" src="img/logo.jpg" height="20vh" style="margin-left: 10px;">
-          </a>
-          <a class="navbar-brand" href="index.php">
-            <p style="margin-left: 10px; font-family: 'Josefin Sans', sans-serif; color: white; height: 20px; line-height: 20px;">Refugees Assistant</p>
-          </a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="nav navbar-nav">
-            <li class="lien-menu lien-actif"><a href="#">Actualité</a></li>
-            <li class="lien-menu "><a href="#">Ressources</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="lien-actif">Déconnexion</a></li>
-
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <h1><i class="fa fa-angle-down fa-stack-2x faa-float animated" aria-hidden="true"></i>Selectionnez un département</h1>
-    <a href="homeRefugie.php">Si on clique sur un lieu</a>
-    <div id="francemap" style="width: 700px; height: 600px;"></div>
-
+    <?php include 'include/menuReg.php'; ?>
+    <h1>Selectionnez un département</h1>
+    <div id="francemap" class="col-lg-6 col-lg-offset-3" style="height: 700px;"></div>
 
     <?php include("include/footer.php");?>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>

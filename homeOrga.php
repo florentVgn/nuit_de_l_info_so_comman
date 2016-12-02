@@ -29,6 +29,7 @@ include_once 'app/bootstrap.inc.php';
     <![endif]-->
   </head>
   <body>
+    <?php include 'include/menuOrga.php'; ?>
     <h1><i class="fa fa-print" aria-hidden="true"></i>Home organisteur</h1>
     <ul>
 

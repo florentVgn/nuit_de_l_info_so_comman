@@ -82,9 +82,13 @@ if(isset($_POST['envoyerInscription']))
 
     <!--FontAwesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--FontAwesome -->
+    <link rel="stylesheet" href="style/style.css">
   </head>
 
   <body>
+    <?php include 'include/menuAdmin.php'; ?>
 
     <div>
       <table>
@@ -120,6 +124,7 @@ if(isset($_POST['envoyerInscription']))
         </form>
       </table>
       </div>
+    <?php include 'include/footer.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>

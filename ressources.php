@@ -29,6 +29,7 @@ include_once 'app/bootstrap.inc.php';
     <![endif]-->
   </head>
   <body>
+    <?php include 'include/menuReg.php'; ?>
     <h1><i class="fa fa-print" aria-hidden="true"></i>Ressources refugié</h1>
     <ul>
       <a href="homeRefugie.php"><li>Actualité</li></a>
