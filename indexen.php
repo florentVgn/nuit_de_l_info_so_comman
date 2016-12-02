@@ -37,12 +37,6 @@ include_once 'app/bootstrap.inc.php';
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript">
-      $(window).load(function() {
-        $('#exampleModal').modal('show');
-
-      });
-    </script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
@@ -71,7 +65,7 @@ include_once 'app/bootstrap.inc.php';
     <header>
      <div class="header-content">
          <div class="header-content-inner">
-             <h1 id="homeHeading">BIENVENUE SUR REFUGEES ASSISTANCE</h1>
+             <h1 id="homeHeading">WELCOME TO REFUGEES ASSISTANCE</h1>
              <hr>
              <p>Afin de pouvoir profiter pleinement de notre site, choisissez la catégorie correspondant à votre situation</p>
              <a href="carte.php" class="btn btn-primary btn-xl page-scroll">Explorer</a>
@@ -79,37 +73,6 @@ include_once 'app/bootstrap.inc.php';
          </div>
      </div>
  </header>
-    <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-        <div class="row">
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexfr.php"><img src="img/france.jpg" class="photoFrance"></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexen.php"><img src="img/anglais.jpg" class="photoAnglais"></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexar.php"><img src="img/arabe.jpg" class="photoArabe"></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexfr.php"><p class="texteLangue">Français</p></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexen.php"><p class="texteLangue">English</p></a>
-          </div>
-          <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexar.php"><p class="texteLangue">اللغة العربية</p></a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-
-
-
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
