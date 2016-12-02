@@ -62,7 +62,7 @@ include_once 'app/bootstrap.inc.php';
   </head>
   <body>
 
-    <?php include 'include/menuReg.php'; ?>
+    <?php include 'include/menuRegCarte.php'; ?>
     <h1>Selectionnez un département</h1>
     <div id="francemap" class="col-lg-6 col-lg-offset-3" style="height: 700px;"></div>
 

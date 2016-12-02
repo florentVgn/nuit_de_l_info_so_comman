@@ -88,7 +88,7 @@ if(isset($_POST['envoyerInscription']))
   </head>
 
   <body>
-    <?php include 'include/menuAdmin.php'; ?>
+    <?php include 'include/menuAdminCreationCompte.php'; ?>
 
     <div>
       <table>

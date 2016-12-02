@@ -50,7 +50,7 @@ if(isset($_POST['supp']))
     <![endif]-->
   </head>
   <body>
-    <?php include 'include/menuAdmin.php';
+    <?php include 'include/menuAdminAccueil.php';
     echo '<h1><i class="fa fa-print" aria-hidden="true"></i>Gestion admin</h1>';
     echo $message;
     function afficheTout($Inscrits) {

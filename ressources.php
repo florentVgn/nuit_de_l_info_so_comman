@@ -29,7 +29,7 @@ include_once 'app/bootstrap.inc.php';
     <![endif]-->
   </head>
   <body>
-    <?php include 'include/menuReg.php'; ?>
+    <?php include 'include/menuRegRessources.php'; ?>
     <div class="container">
 
 
