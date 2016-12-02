@@ -16,10 +16,10 @@ include_once 'app/bootstrap.inc.php';
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
 
     <!--FontAwesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,29 +29,10 @@ include_once 'app/bootstrap.inc.php';
     <![endif]-->
   </head>
   <body>
-    <?php include 'include/menuOrga.php'; ?>
-    <h1><i class="fa fa-print" aria-hidden="true"></i>Home organisteur</h1>
-    <ul>
+    <h1><i class="fa fa-print" aria-hidden="true"></i>Actualités refugie</h1>
+    <a href="homeRefugie.php"><li>Actualité</li></a>
+    <a href="ressources.php"><li>Ressources</li></a>
 
-    </ul>
-  <h2>Consulter notifications</h2>
-    <p>en construction</p>
-  <!-- Recevoir notifications des réfugiés -->
-
-  <h2>Rediger une actualité</h2>
-  <form action=".php" method="post" enctype="multipart/form-data">
-    <p>Ajouter une image <p>
-    <label for="mon_fichier">Fichier (tous formats | max. 10 Mo) :</label><br />
-    <input type="hidden" name="MAX_FILE_SIZE" value="123450" />
-    <input type="file" name="mon_fichier" id="mon_fichier" /><br />
-    <p>Titre de la publication</p>
-    <input type="text" name="objet"/>
-      <br><br>
-    <textarea name="contenu" rows="5" cols="100"></textarea>
-      <br><br>
-    <input type="submit" value="valider" />
-    <input type="reset" value="vider le formulaire" />
-  </form>
 
 
 
