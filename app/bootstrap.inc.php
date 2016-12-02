@@ -8,8 +8,8 @@ session_start();
 //check les droits pour les pages
 function isGranted($userID)
 {
-  global $inscritsDAO;
-  $user = $inscritsDAO->getOne($userID);
+  global $InscritsDAO;
+  $user = $InscritsDAO->getOne($userID);
 
   if (strpos($_SERVER['REQUEST_URI'], 'admin.php'))
   {
@@ -36,4 +36,7 @@ function isGranted($userID)
     }elseif($user['role']=='ROLE_ORGANISTAEUR'){
       header('Location: ../web/homeOrga.php');
     }
-  }
+  }}
+
+
+?>
