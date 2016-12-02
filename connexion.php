@@ -17,6 +17,12 @@ if(isset($_POST['forgot']))
   exit(0);
 }
 
+if(isset($_POST['inscription']))
+{
+  header("Location: formulaire.php");
+  exit(0);
+}
+
 if (isset($_POST['connexion']))
 { // On a cliqué sur le bouton
   if (empty($param['login']) || empty($param['mdp']))
@@ -95,18 +101,12 @@ if (isset($_POST['connexion']))
           <form action="" method="post">
             <p class="form"><input type="text" name="login" placeholder="Login" ></p><br>
             <p class="form"><input type="password" name="mdp" placeholder="Mot de passe"></p><br>
-<<<<<<< HEAD
             <input type="submit" name="connexion" value="Connexion"/>
-            <input type="submit" name="inscription" value="Inscription"/>
+            <input type="submit" name="forgot" value="Mot de passe oublié"/>
+            <input type="submit" name="inscription" value="Inscription"/>            
           </form>
 
 
-=======
-            <button type="button" name="voir[]" value="submit">Connexion</button>
-          </form>
-
-          <a href="formulaire.php"><button type="button">Inscription</button></a>
->>>>>>> origin/master
         </div>
       </div>
 
