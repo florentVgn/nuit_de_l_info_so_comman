@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 01 Décembre 2016 à 19:42
+-- Généré le :  Ven 02 Décembre 2016 à 02:06
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -72,7 +72,6 @@ CREATE TABLE IF NOT EXISTS `demande` (
 
 CREATE TABLE IF NOT EXISTS `inscrit` (
   `nom` varchar(25) NOT NULL,
-  `prenom` varchar(25) NOT NULL,
   `login` varchar(25) NOT NULL,
   `mdp` varchar(25) NOT NULL,
   `mail` varchar(35) NOT NULL,
@@ -80,6 +79,14 @@ CREATE TABLE IF NOT EXISTS `inscrit` (
   `acces_region` varchar(200) NOT NULL,
   PRIMARY KEY (`login`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `inscrit`
+--
+
+INSERT INTO `inscrit` (`nom`, `login`, `mdp`, `mail`, `role`, `acces_region`) VALUES
+('Jourdan', 'nicolas', 'Salut07salut', 'nicolas.jourdan.c@gmail.com', 'ROLE_ORGANISATEUR', 'TEST'),
+('Jourdan', 'nicolasfg', 'Salut07salut', 'nicolas.jourdan.c@gmail.com', 'ROLE_ORGANISATEUR', 'TEST');
 
 -- --------------------------------------------------------
 
