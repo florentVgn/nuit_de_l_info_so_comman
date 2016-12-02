@@ -170,7 +170,8 @@ p.binome {
   text-align: center;
 }
 
-.footer-nuitinfo
+.footer-chicken_run, .footer-tacos_n_co
 {
+  border-radius: 45%;
   height: 80px;
 }
