@@ -5,7 +5,9 @@ $InscritsDAO = new InscritsDAO(MaBD::getInstance());
 
 session_start();
 
-if (!isset($_SESSION['login']) && !strpos($_SERVER['REQUEST_URI'], 'connexion.php') && !strpos($_SERVER['REQUEST_URI'], 'carte.php') && !strpos($_SERVER['REQUEST_URI'], 'index.php') && !strpos($_SERVER['REQUEST_URI'], 'formulaire.php') && !strpos($_SERVER['REQUEST_URI'], 'motdepasseoublie.php'))
+
+if (!isset($_SESSION['login']) && !strpos($_SERVER['REQUEST_URI'], 'connexion.php') && !strpos($_SERVER['REQUEST_URI'], 'motdepasseoublie.php') && !strpos($_SERVER['REQUEST_URI'], 'carte.php') && !strpos($_SERVER['REQUEST_URI'], 'index.php') && !strpos($_SERVER['REQUEST_URI'], 'formulaire.php'))
+
 {
 
   header('Location: connexion.php');
@@ -29,7 +31,7 @@ function isGranted($userID)
   {
     if (!($user['role'] =='ROLE_ADMINISTRATEUR') && !($user['role']=='ROLE_ORGANISTAEUR'))
     {
-        header("Location: ../web/connexion.php");
+        header("Location: connexion.php");
     }
   }
 

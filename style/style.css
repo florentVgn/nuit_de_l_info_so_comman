@@ -7,7 +7,8 @@ body {
    background-color: #F7F8FA;
 }
 
-h1 { text-align: center; margin-top: 75px;}
+
+h1 { text-align: center; margin-top: 100px;}
 table {
     border-collapse: collapse;
     margin: 5px auto ;
@@ -483,7 +484,7 @@ navbar {
 }
 
 .modal {
-  margin-top: 25vh !important;
+  margin-top: 27vh !important;
 }
 
 .modal-content {
@@ -497,6 +498,12 @@ navbar {
 {
   text-align: center;
   font-size: 2.5em;
+  font-color: white !important; 
+}
+
+#exampleModal
+{
+  opacity: 0.95;
 }
 
 @media screen and (min-width: 200px) and (max-width: 675px) {
@@ -507,7 +514,26 @@ navbar {
 {
   text-align: center;
   font-size: 1em;
+  font-color: white !important; 
 }
+}
+.creerAnnonce
+{
+  text-align : center;
+}
+#idAcc
+{
+  text-align : right;
+}
+
+.ressources-h1
+{
+  font-size: 60px;
+}
+
+.ressources-img
+{
+  height: 450px;
 }
 
 
