@@ -60,7 +60,21 @@ if (isset($_POST['voir'])) {
     </head>
     <body>
       <?php include 'include/menuIndex.php'; ?>
-      <h1>Connexion</h1>
+      <div class="container bandeau-connexion">
+        <div id="Clouds">
+          <div class="Cloud Foreground"></div>
+          <div class="Cloud Background"></div>
+          <div class="Cloud Foreground"></div>
+          <div class="Cloud Background"></div>
+          <div class="Cloud Foreground"></div>
+          <div class="Cloud Background"></div>
+          <div class="Cloud Background"></div>
+          <div class="Cloud Foreground"></div>
+          <div class="Cloud Background"></div>
+          <div class="Cloud Background"></div>
+        <!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
+        </div>
+      <h1 class="bandeau-connexion-h1">Connexion</h1>
 
         <div class="formulaire">
           <form action="" method="post">
@@ -68,8 +82,10 @@ if (isset($_POST['voir'])) {
             <p class="form"><input type="password" name="mdp" placeholder="Mot de passe"></p><br>
             <p class="form"><input type="image" name="voir[]" src="img/voir.png" value="submit"></p>
           </form>
+          <a href="formulaire.php">Inscription</a>
         </div>
-     <a href="formulaire.php">Inscription</a>
+      </div>
+
      <?php include("include/footer.php");?>
     </body>
 </html>

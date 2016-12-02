@@ -16,7 +16,7 @@ include_once 'app/bootstrap.inc.php';
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style/style.css">
     <!--FontAwesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
@@ -62,7 +62,21 @@ include_once 'app/bootstrap.inc.php';
     <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
+<<<<<<< HEAD
 
+=======
+        <div class="row">
+          <div class="col-lg-4">
+          <img src="img/france.jpg" class="photoFrance">
+          </div>
+          <div class="col-lg-4">
+            <img src="img/anglais.jpg" class="photoAnglais">
+          </div>
+          <div class="col-lg-4">
+            <img src="img/arabe.jpg" class="photoArabe">
+          </div>
+        </div>
+>>>>>>> origin/master
         </div>
       </div>
     </div>
