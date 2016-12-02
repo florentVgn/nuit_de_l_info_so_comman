@@ -56,7 +56,12 @@ p.form input:hover {
 p.form input:focus {
   border-bottom: 2px solid #DF3131;
 }
-p.form input[type=image] { vertical-align: middle;}
+.connexion
+{
+  height: 50px;
+  width: 200px;
+}
+
 .icon {
   margin-top: 10px !important;
 }
