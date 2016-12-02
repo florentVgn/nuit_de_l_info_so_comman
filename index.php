@@ -95,13 +95,13 @@ include_once 'app/bootstrap.inc.php';
         </div>
         <div class="row">
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexfr.php"><p class="texteLangue">Français</p></a>
+            <a class="texteLangue" href="indexfr.php"><p>Français</p></a>
           </div>
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexen.php"><p class="texteLangue">English</p></a>
+            <a class="texteLangue" href="indexen.php"><p>English</p></a>
           </div>
           <div class="col-lg-4 col-xs-4 col-md-4">
-            <a href="indexar.php"><p class="texteLangue">اللغة العربية</p></a>
+            <a class="texteLangue" href="indexar.php"><p>اللغة العربية</p></a>
           </div>
         </div>
         </div>

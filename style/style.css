@@ -484,7 +484,7 @@ navbar {
 }
 
 .modal {
-  margin-top: 27vh !important;
+  margin-top: 30vh !important;
 }
 
 .modal-content {
@@ -498,7 +498,10 @@ navbar {
 {
   text-align: center;
   font-size: 2.5em;
-  font-color: white !important; 
+  color: white !important; 
+}
+.textLangue:hover {
+  text-decoration: none;
 }
 
 #exampleModal
@@ -508,7 +511,7 @@ navbar {
 
 @media screen and (min-width: 200px) and (max-width: 675px) {
   .modal {
-  margin-top: 35vh !important;
+  margin-top: 40vh !important;
   }
   .texteLangue
 {
