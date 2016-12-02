@@ -7,7 +7,8 @@ body {
    background-color: #F7F8FA;
 }
 
-h1 { text-align: center; margin-top: 75px;}
+
+h1 { text-align: center; margin-top: 100px;}
 table {
     border-collapse: collapse;
     margin: 5px auto ;
@@ -523,4 +524,14 @@ navbar {
 #idAcc
 {
   text-align : right;
+}
+
+.ressources-h1
+{
+  font-size: 60px;
+}
+
+.ressources-img
+{
+  height: 450px;
 }
