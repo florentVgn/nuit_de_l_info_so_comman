@@ -155,6 +155,10 @@ p.binome {
   background-color: #ff5145 !important;
   border: 0px;
   border-radius: 0px;
+  margin-bottom: 0px !important;
+}
+navbar {
+  margin-bottom: 0px !important;
 }
 
 .lien-actif {
@@ -167,7 +171,9 @@ p.binome {
 .footer
 {
   border-top: solid #8F9090 2px;
-  height: 90px;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
   background-color: #CCCCCC;
   bottom: 0;
   position: fixed;
@@ -462,16 +468,44 @@ p.binome {
 
 .photoFrance
 {
-  width: 150px;
+  width: 100%;
 
 }
 
 .photoAnglais
 {
-  width: 150px;
+  width: 100%;
 }
 
 .photoArabe
 {
-  width: 150px;
+  width: 100%;
+}
+
+.modal {
+  margin-top: 25vh !important;
+}
+
+.modal-content {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: rgba(255,255,255,0) !important;
+  color: white;
+}
+
+.texteLangue
+{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+@media screen and (min-width: 200px) and (max-width: 675px) {
+  .modal {
+  margin-top: 35vh !important;
+  }
+  .texteLangue
+{
+  text-align: center;
+  font-size: 1em;
+}
 }

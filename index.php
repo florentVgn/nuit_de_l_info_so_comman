@@ -46,37 +46,64 @@ include_once 'app/bootstrap.inc.php';
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <?php include 'include/menuIndex.php'; ?>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Refugees Assitance</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Langue</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
     <header>
      <div class="header-content">
          <div class="header-content-inner">
              <h1 id="homeHeading">BIENVENUE SUR REFUGEES ASSISTANCE</h1>
              <hr>
              <p>Afin de pouvoir profiter pleinement de notre site, choisissez la catégorie correspondant à votre situation</p>
-             <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+             <a href="carte.php" class="btn btn-primary btn-xl page-scroll">Explorer</a>
+             <a href="connexion.php" class="btn btn-primary btn-xl page-scroll">Organisations</a>
          </div>
      </div>
  </header>
-    <a href="connexion.php">Organisateur</a>
-    <a href="carte.php">Refugié</a>
     <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-<<<<<<< HEAD
-
-=======
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-4 col-md-4">
           <img src="img/france.jpg" class="photoFrance">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-4 col-md-4">
             <img src="img/anglais.jpg" class="photoAnglais">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-xs-4 col-md-4">
             <img src="img/arabe.jpg" class="photoArabe">
           </div>
         </div>
->>>>>>> origin/master
+        <div class="row">
+          <div class="col-lg-4 col-xs-4 col-md-4">
+            <p class="texteLangue">Français</p>
+          </div>
+          <div class="col-lg-4 col-xs-4 col-md-4">
+            <p class="texteLangue">English</p>
+          </div>
+          <div class="col-lg-4 col-xs-4 col-md-4">
+            <p class="texteLangue">اللغة العربية</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>

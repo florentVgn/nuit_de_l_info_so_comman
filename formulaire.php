@@ -55,6 +55,7 @@ if(isset($_POST['envoyerDemandeInscription']))
   <body>
     <?php include 'include/menuOrga.php'; ?>
     <div>
+      
       <table>
         <form action="" method="post" enctype="application/x-www-form-urlencoded" name="formulaireInscription">
           <tr>
@@ -93,13 +94,7 @@ if(isset($_POST['envoyerDemandeInscription']))
         </form>
       </table>
       </div>
-=======
     <h1><i class="fa fa-print" aria-hidden="true"></i>Ici un formulaire permettant d'envoyer un mail pour vouloir s'inscrire</h1>
-
-    <p>Test</p>
-
-
-
     <?php include("include/footer.php");?>
 
   </body>
