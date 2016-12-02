@@ -3,6 +3,20 @@
 // Autochargement des classes
 include_once 'app/bootstrap.inc.php';
 
+if(isset($_POST['modif']))
+{
+    $InscritsDAO->updateUser($_POST['nom'], $_POST['login'], $_POST['mdp'],$_POST['mail'],$_POST['acces_region']);
+    header("Location: ../web/admin.php?modif=OK");
+    exit(0);
+}
+$message = isset($_GET["modif"])?"Modification effectuee\n":"";
+//si on supp
+if(isset($_POST['supp']))
+{
+    $_SESSION['loginToSupp'] = $_POST['login'];
+    header("Location: confirme_delete.php");
+    exit(0);
+}
 
 ?>
 <!DOCTYPE html>
@@ -29,8 +43,20 @@ include_once 'app/bootstrap.inc.php';
     <![endif]-->
   </head>
   <body>
-    <?php include 'include/menuAdmin.php'; ?>
+    <?php include 'include/menuAdmin.php';
     <h1><i class="fa fa-print" aria-hidden="true"></i>Gestion admin</h1>
+    echo $message;
+    function afficheTout($Inscrits) {
+        echo "------- Tous les Inscrits :\n";
+        echo '<tr>';
+        foreach ($Inscrits->getAllUsers() as $lesInscrits)
+        {
+            echo $lesInscrits->toForm() ;
+        }
+        echo '</tr>';
+        afficheTout($InscritsDAO);
+    } ?>
+
 
 
 

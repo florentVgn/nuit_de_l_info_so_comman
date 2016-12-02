@@ -1,7 +1,7 @@
 <?php
 
 class InscritsDAO extends DAO {
-    protected $class = "Inscrit";
+    protected $class = "inscrit";
 
     public function checkAuthentification($login, $mdp)
     {
@@ -26,7 +26,8 @@ class InscritsDAO extends DAO {
         $stmt = $this->pdo->query("SELECT * FROM inscrit ORDER BY nom");
         foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row)
             {
-             $res[] = new Inscrit(array('login' => $row['login'],'nom' => $row['nom'], 'mdp' => $row['mdp'],'mail' => $row['mail'],'role' => $row['role'],
+             $res[] = new Inscrit(array('login' => $row['login'],'nom' => $row['nom'],'prenom' => $row['prenom'],
+              'mdp' => $row['mdp'],'mail' => $row['mail'],'role' => $row['role'],
               'acces_region' => $row['acces_region']));
             }
 
@@ -43,8 +44,9 @@ class InscritsDAO extends DAO {
 
     public function insert($obj)
     {
-      $stmt = $this->pdo->prepare("INSERT INTO inscrit (nom, login, mdp, mail, role, acces_region) VALUES (:nom, :login, :mdp, :mail, :role, :acces_region)");
+      $stmt = $this->pdo->prepare("INSERT INTO inscrit (nom, prenom, login, mdp, mail, role, acces_region) VALUES (:nom, :prenom, :login, :mdp, :mail, :role, :acces_region)");
       $res = $stmt->execute(array('nom' => $obj->nom,
+                                  'prenom' => $obj->prenom,
                                   'login' => $obj->login,
                                   'mdp' => $obj->mdp,
                                   'mail' => $obj->mail,
@@ -60,10 +62,10 @@ class InscritsDAO extends DAO {
         return $res;
     }
 
-    public function updateRole($login, $newRole)
+    public function updateUser( $nom,$login, $mdp, $mail, $acces_region)
     {
-      $stmt = $this->pdo->prepare("UPDATE inscrit SET role=:role WHERE login=:login");
-      $res = $stmt->execute(array('role' => $newRole,'login' => $login));
+      $stmt = $this->pdo->prepare("UPDATE inscrit SET nom=:nom, login=:login, mdp=:mdp, mail=:mail, acces_region=:acces_region  WHERE login=:login");
+      $res = $stmt->execute(array('nom' => $nom,'login' => $login,'mdp' => $mdp,'mail' => $mail,'acces_region' => $acces_region ));
       return $res;
     }
 
