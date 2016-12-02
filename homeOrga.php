@@ -2,7 +2,12 @@
 
 // Autochargement des classes
 include_once 'app/bootstrap.inc.php';
-
+if(isset($_POST['deconnexion']))
+{
+  unset($_SESSION['login']);
+  header('Location: connexion.php');
+  exit(0);
+}
 
 ?>
 <!DOCTYPE html>
