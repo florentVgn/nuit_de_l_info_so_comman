@@ -54,8 +54,8 @@ if(isset($_POST['supp']))
             echo $lesInscrits->toForm() ;
         }
         echo '</tr>';
-        afficheTout($InscritsDAO);
-    } ?>
+    }
+    afficheTout($InscritsDAO);?>
 
 
 
