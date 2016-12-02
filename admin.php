@@ -3,6 +3,13 @@
 // Autochargement des classes
 include_once 'app/bootstrap.inc.php';
 
+if(isset($_POST['deconnexion']))
+{
+  unset($_SESSION['login']);
+  header('Location: connexion.php');
+  exit(0);
+}
+
 if(isset($_POST['modif']))
 {
     $InscritsDAO->updateUser($_POST['nom'], $_POST['login'], $_POST['mdp'],$_POST['mail'],$_POST['acces_region']);
@@ -43,8 +50,8 @@ if(isset($_POST['supp']))
     <![endif]-->
   </head>
   <body>
-    <h1><i class="fa fa-print" aria-hidden="true"></i>Gestion admin</h1>
     <?php include 'include/menuAdmin.php';
+    echo '<h1><i class="fa fa-print" aria-hidden="true"></i>Gestion admin</h1>';
     echo $message;
     function afficheTout($Inscrits) {
         echo "------- Tous les Inscrits :\n";
