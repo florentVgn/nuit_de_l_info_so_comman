@@ -32,6 +32,10 @@ include_once 'app/bootstrap.inc.php';
 
 	<script type="text/javascript">
 	$(document).ready(function() {
+    function RedirectionJavascript(code)
+    {
+      document.location.href="ressource.php?code="+code;
+    }
 		$('#francemap').vectorMap({
 		    map: 'france_fr',
 			hoverOpacity: 0.5,
@@ -42,6 +46,7 @@ include_once 'app/bootstrap.inc.php';
 			selectedColor: "#EC0000",
 			enableZoom: true,
 			showTooltip: true,
+
 		    onRegionClick: function(element, code, region)
 		    {
 		        var message = 'Département : "'
@@ -49,8 +54,7 @@ include_once 'app/bootstrap.inc.php';
 		            + '" || Code : "'
 		            + code
 					+ '"';
-
-		        alert(message);
+          RedirectionJavascript(code)
 		    }
 		});
 	});
