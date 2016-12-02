@@ -63,10 +63,7 @@ include_once 'app/bootstrap.inc.php';
     <div id="francemap" class="col-lg-6 col-lg-offset-3" style="height: 700px;"></div>
 
     <footer class="footer col-lg-12">
-      <div class="col-lg-1"><img class="footer-chicken_run " src="img/chicken_run.jpg"> </div>
-      <div class="col-lg-1"><img class="footer-tacos_n_co " src="img/tacos_n_co.jpg"> </div>
-      <div class="col-lg-1"><img class="footer-millenium " src="img/millenium.PNG"> </div>
-      <p class="footer-copyright col-lg-9">Copyright © 2016 - SoComman</p>
+      <p class="footer-copyright col-lg-6 col-lg-offset-3">Copyright © 2016 - SoComman</p>
     </footer>
 
 

@@ -31,6 +31,7 @@ include_once 'app/bootstrap.inc.php';
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <?php include 'include/menuIndex.php'; ?>
     <h1><i class="fa fa-print" aria-hidden="true"></i>Bonjour</h1>
     <a href="connexion.php">Organisateur</a>
     <a href="carte.php">Refugié</a>
