@@ -19,8 +19,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li class="lien-menu "><a href="#">Accueil</a></li>
-        <li class="lien-menu lien-actif"><a href="#">Gestion Demandes</a></li>
+        <li class="lien-menu "><a href="index.php">Accueil</a></li>
+        <li class="lien-menu lien-actif"><a href="gestionDemandes.php">Gestion Demandes</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <form action="" method="post">

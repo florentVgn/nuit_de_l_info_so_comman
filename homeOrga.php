@@ -17,7 +17,7 @@ if(isset($_POST['deconnexion']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Organisateur</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@ if(isset($_POST['deconnexion']))
   </head>
   <body>
     <?php include 'include/menuOrga.php'; ?>
-    <h1><i class="fa fa-print" aria-hidden="true"></i>Home organisteur</h1>
+    <h1><i class="fa fa-print" aria-hidden="true"></i>Home organisateur</h1>
     <ul>
 
     </ul>
