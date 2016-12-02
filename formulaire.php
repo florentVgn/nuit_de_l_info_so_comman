@@ -54,47 +54,27 @@ if(isset($_POST['envoyerDemandeInscription']))
   </head>
   <body>
     <?php include 'include/menuOrga.php'; ?>
-    <div>
-      
-      <table>
-        <form action="" method="post" enctype="application/x-www-form-urlencoded" name="formulaireInscription">
-          <tr>
-            <td colspan="2"><input id="nameInscri" type="text" name="nomDemandeInscri" placeholder="Nom de l'entreprise" maxlength="25" value="<?php echo @$_POST['nomInscri']; ?>" required/></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input id="mailInscri" type="email" name="mailDemandeInscri"  placeholder="Votre mail" maxlength="100" value="<?php echo @$_POST['mailInscri']; ?>" required/></td>
-          </tr>
-          <tr>
-            <td colspan="2"><select name="selectRole"/>
-                            <?php
-                            $lesZones = $ZonesDAO->getAllZones();
-                            foreach ($lesZones as $uneZone)
-                            {
-                              $uneZone->toForm();
-                            }
-                             ?>
-                         </select></td>
-          </tr>
-          <tr>
-            <td colspan="2"><textarea name="messageDemandeInscri" class="text-areaForm" placeholder="Message" cols="70" rows="10"></textarea></td>
-          </tr>
+    <div class="theForm">
 
-          <tr>
-            <td width="42%">
-              <center>
-                <input type="reset" name="reset" id="reset" value="Réinitialiser le formulaire"/>
-              </center>
-            </td>
-            <td width="41%">
-              <center>
-                <input type="submit" name="envoyerDemandeInscription" value="Envoyer">
-            </center>
-            </td>
-          </tr>
+
+      <h1>Complétez votre formulaire d'inscription</h1>
+        <form action="" method="post" enctype="application/x-www-form-urlencoded" name="formulaireInscription">
+          <input class="formulaire-fields" id="nameInscri" type="text" name="nomDemandeInscri" placeholder="Nom de l'entreprise" maxlength="25" value="<?php echo @$_POST['nomInscri']; ?>" required/>
+          <input class="formulaire-fields" id="mailInscri" type="email" name="mailDemandeInscri"  placeholder="Votre mail" maxlength="100" value="<?php echo @$_POST['mailInscri']; ?>" required/>
+          <select class="formulaire-fields" name="selectRole"/>
+            <?php
+            $lesZones = $ZonesDAO->getAllZones();
+            foreach ($lesZones as $uneZone)
+            {
+              $uneZone->toForm();
+            }
+             ?>
+          </select>
+          <textarea name="messageDemandeInscri" class="formulaire-fields text-areaForm" placeholder="Message" cols="70" rows="10"></textarea></td>
+                <input class="formulaire-fields" type="reset" name="reset" id="reset" value="Réinitialiser le formulaire"/>
+                <input class="formulaire-fields" type="submit" name="envoyerDemandeInscription" value="Envoyer">
         </form>
-      </table>
       </div>
-    <h1><i class="fa fa-print" aria-hidden="true"></i>Ici un formulaire permettant d'envoyer un mail pour vouloir s'inscrire</h1>
     <?php include("include/footer.php");?>
 
   </body>
