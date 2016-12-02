@@ -24,12 +24,10 @@ include_once 'app/bootstrap.inc.php';
     <link rel="stylesheet" href="style/style.css">
     <link href="style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 
-    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="jquery.vmap.js" type="text/javascript"></script>
-    <script src="jquery.vmap.france.js" type="text/javascript"></script>
-  	<script src="jquery.vmap.colorsFrance.js" type="text/javascript"></script>
+    <script src="js/jquery.vmap.js" type="text/javascript"></script>
+    <script src="js/jquery.vmap.france.js" type="text/javascript"></script>
+  	<script src="js/jquery.vmap.colorsFrance.js" type="text/javascript"></script>
 
   	<script type="text/javascript">
   	$(document).ready(function() {
@@ -63,10 +61,9 @@ include_once 'app/bootstrap.inc.php';
     <div id="francemap" class="col-lg-6 col-lg-offset-3" style="height: 700px;"></div>
 
     <?php include("include/footer.php");?>
-<<<<<<< HEAD
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-=======
->>>>>>> origin/master
+
   </body>
 </html>
