@@ -1,10 +1,10 @@
 <?php
 
-class ZonesDAO extends DAO {
+class DemandesDAO extends DAO {
     protected $class = "demande";
 
 
-    public function getAll() {
+    public function getAllDemandes() {
         $res = array();
         $stmt = $this->pdo->query("SELECT * FROM demande ORDER BY libelle");
         foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $row)
@@ -15,10 +15,10 @@ class ZonesDAO extends DAO {
         return $res;
     }
 
-    public function getOne($id_ville,$id_categorie)
+    public function getOneSVP($id_ville,$id_categorie)
     {
       $stmt = $this->pdo->prepare("SELECT * FROM demande WHERE id_ville=:id_ville and id_categorie=:id_categorie");
-      $stmt->execute(array('id_ville' => $row['id_ville'],'id_categorie' => $row['id_categorie']));
+      $stmt->execute(array('id_ville' => $id_ville,'id_categorie' => $id_categorie));
       $user = $stmt->fetch(PDO::FETCH_ASSOC);
       return $user;
     }

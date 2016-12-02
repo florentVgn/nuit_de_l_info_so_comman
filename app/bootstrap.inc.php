@@ -2,12 +2,14 @@
 function __autoload($class) { require_once "/../Classes/$class.php"; }
 $ZonesDAO = new ZonesDAO(MaBD::getInstance());
 $InscritsDAO = new InscritsDAO(MaBD::getInstance());
+$DemandesDAO = new DemandesDAO(MaBD::getInstance());
+$actualiteDAO = new actualiteDAO(MaBD::getInstance());
 
 session_start();
 
 
 
-if (!isset($_SESSION['login']) && !strpos($_SERVER['REQUEST_URI'], 'connexion.php') && !strpos($_SERVER['REQUEST_URI'], 'carte.php') && !strpos($_SERVER['REQUEST_URI'], 'index.php') && !strpos($_SERVER['REQUEST_URI'], 'formulaire.php') && !strpos($_SERVER['REQUEST_URI'], 'motdepasseoublie.php') && !strpos($_SERVER['REQUEST_URI'], 'indexfr.php') && !strpos($_SERVER['REQUEST_URI'], 'indexen.php') && !strpos($_SERVER['REQUEST_URI'], 'indexar.php'))
+if (!isset($_SESSION['login']) && !strpos($_SERVER['REQUEST_URI'], 'connexion.php') && !strpos($_SERVER['REQUEST_URI'], 'gestiondemandes.php') && !strpos($_SERVER['REQUEST_URI'], 'carte.php') && !strpos($_SERVER['REQUEST_URI'], 'index.php') && !strpos($_SERVER['REQUEST_URI'], 'formulaire.php') && !strpos($_SERVER['REQUEST_URI'], 'motdepasseoublie.php') && !strpos($_SERVER['REQUEST_URI'], 'indexfr.php') && !strpos($_SERVER['REQUEST_URI'], 'indexen.php') && !strpos($_SERVER['REQUEST_URI'], 'indexar.php'))
 {
 
   header('Location: connexion.php');

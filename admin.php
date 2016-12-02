@@ -9,7 +9,7 @@ if(isset($_POST['deconnexion']))
   header('Location: connexion.php');
   exit(0);
 }
-
+ 
 if(isset($_POST['modif']))
 {
     $InscritsDAO->updateUser($_POST['nom'], $_POST['login'], $_POST['mdp'],$_POST['mail'],$_POST['acces_region']);
