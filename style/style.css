@@ -161,7 +161,7 @@ p.binome {
   height: 90px;
   background-color: #CCCCCC;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
@@ -172,6 +172,6 @@ p.binome {
 
 .footer-chicken_run, .footer-tacos_n_co, .footer-millenium
 {
-  border-radius: 45%;
+  border-radius: 70%;
   height: 80px;
 }
