@@ -24,7 +24,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <form action="" method="post">
-          <input type="submit" name="deconnexion" value="Deconnexion"/>
+          <input class="btn btn-danger btn-lg" type="submit" name="deconnexion" value="Deconnexion"/>
         </form>
 
       </ul>
