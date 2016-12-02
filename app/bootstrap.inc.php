@@ -6,9 +6,14 @@ $InscritsDAO = new InscritsDAO(MaBD::getInstance());
 session_start();
 
 
+<<<<<<< HEAD
 
 
 if (!isset($_SESSION['login']) && !strpos($_SERVER['REQUEST_URI'], 'connexion.php') && !strpos($_SERVER['REQUEST_URI'], 'carte.php') && !strpos($_SERVER['REQUEST_URI'], 'index.php') && !strpos($_SERVER['REQUEST_URI'], 'formulaire.php') && !strpos($_SERVER['REQUEST_URI'], 'motdepasseoublie.php') && !strpos($_SERVER['REQUEST_URI'], 'indexfr.php') && !strpos($_SERVER['REQUEST_URI'], 'indexen.php') && !strpos($_SERVER['REQUEST_URI'], 'indexar.php'))
+=======
+if (!isset($_SESSION['login']) && !strpos($_SERVER['REQUEST_URI'], 'connexion.php') && !strpos($_SERVER['REQUEST_URI'], 'motdepasseoublie.php') && !strpos($_SERVER['REQUEST_URI'], 'carte.php') && !strpos($_SERVER['REQUEST_URI'], 'index.php') && !strpos($_SERVER['REQUEST_URI'], 'formulaire.php'))
+
+>>>>>>> origin/master
 {
 
   header('Location: connexion.php');
