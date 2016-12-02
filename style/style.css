@@ -7,7 +7,8 @@ body {
    background-color: #F7F8FA;
 }
 
-h1 { text-align: center; margin-top: 75px;}
+
+h1 { text-align: center; margin-top: 100px;}
 table {
     border-collapse: collapse;
     margin: 5px auto ;
@@ -515,4 +516,41 @@ navbar {
   font-size: 1em;
   font-color: white !important; 
 }
+}
+.creerAnnonce
+{
+  text-align : center;
+}
+#idAcc
+{
+  text-align : right;
+}
+
+.ressources-h1
+{
+  font-size: 60px;
+}
+
+.ressources-img
+{
+  height: 450px;
+}
+
+
+.theForm {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formulaire-fields {
+  width: 50%;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c3c3c3;
+  background-color: #f2f2f2;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #a0a0a0;
 }
