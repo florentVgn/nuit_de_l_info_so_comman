@@ -53,6 +53,7 @@ include_once 'app/bootstrap.inc.php';
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
+            <a class="navbar-brand page-scroll" href="http://www.msf.fr" target="_blank"><img class="msfphoto" src="img/msf.png.png"></a>
             <a class="navbar-brand page-scroll" href="#page-top">Refugees Assitance</a>
         </div>
 
@@ -60,7 +61,7 @@ include_once 'app/bootstrap.inc.php';
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Langue</a>
+                    <a class="page-scroll" href="#exampleModal" data-toggle="modal" data-target="#exampleModal" >Langue</a>
                 </li>
             </ul>
         </div>
@@ -107,9 +108,6 @@ include_once 'app/bootstrap.inc.php';
         </div>
       </div>
     </div>
-
-
-
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

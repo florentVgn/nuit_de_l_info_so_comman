@@ -47,6 +47,7 @@ include_once 'app/bootstrap.inc.php';
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
+            <a class="navbar-brand page-scroll" href="http://www.msf.fr" target="_blank"><img class="msfphoto" src="img/msf.png.png"></a>
             <a class="navbar-brand page-scroll" href="#page-top">مساعدة اللاجئين</a>
         </div>
 
@@ -68,8 +69,8 @@ include_once 'app/bootstrap.inc.php';
              <h1 id="homeHeading">مرحبا بكم في موقع مساعدة اللاجئين</h1>
              <hr>
              <p style="font-size:1.5em;">من أجل الاستفادة الكاملة من موقعنا، واختر الفئة االتي تناسب موقفك</p>
-             <a href="carte.php" class="btn btn-primary btn-xl page-scroll">Explorer</a>
-             <a href="connexion.php" class="btn btn-primary btn-xl page-scroll">Organisations</a>
+             <a href="carte.php" class="btn btn-primary btn-xl page-scroll">بحث</a>
+             <a href="connexion.php" class="btn btn-primary btn-xl page-scroll">المنظمات</a>
          </div>
      </div>
  </header>
